@@ -1,0 +1,307 @@
+:root {
+  --primary: #190b0b;
+  --secondary: #a35320;
+  --third: #221f18;
+  --bg: #c5904a;
+  --footer: #6f3f19;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  color: var(--bg);
+}
+.body {
+  font-family: "Montserrat", sans-serif;
+  background: var(--footer);
+  color: var(--secondary);
+  min-height: 2000px;
+  background-color: black;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 7%;
+  background-color: var(--primary);
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  right: 0;
+  top: 0;
+  border-bottom: 3px solid var(--bg);
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+.navbar .navar-logo {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-left: 4rem;
+  margin-right: 5rem;
+  color: #a35320;
+}
+.navbar .navar-logo span {
+  font-size: 2.5 rem;
+  font-weight: 700;
+  color: var(--footer);
+}
+.Navbar a {
+  margin: 0.4rem 1.6rem;
+  display: inline-block;
+  color: var(--bg);
+  font-size: 1.6rem;
+}
+
+.Navbar a::after {
+  content: "";
+  display: block;
+  border-bottom: 1px solid var(--secondary);
+  transform: scaleX(0);
+  transition: 0.27s linear;
+}
+.Navbar a:hover::after {
+  transform: scaleX(0.6);
+}
+.Extra-Navbar a {
+  display: inline-block;
+  margin: 0 0.6rem;
+  margin-bottom: 1rem;
+}
+.Extra-Navbar {
+  margin: 0 1rem;
+}
+#hamburger {
+  display: none;
+}
+
+/* Hero Section */
+.Hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-image: url(../gambar/chris-reyem-oJoeGnj8OMM-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #190b0b;
+  background-position: center;
+  position: relative;
+}
+
+.Hero::after {
+  width: 100%;
+  height: 30%;
+  display: block;
+  bottom: 0;
+  position: absolute;
+  content: "";
+  background: linear-gradient(0deg, rgba(1, 1, 1, 1), rgba(1, 1, 1, 0));
+}
+
+.welcome {
+  font-size: 4rem;
+  color: var(--bg);
+
+  padding-right: 0 px;
+  display: inline-block;
+  color: #221f18;
+  background-color: var(--bg);
+}
+.welcome .span1 {
+  color: var(--footer);
+}
+
+.welcome::after {
+  content: "";
+  background: linear-gradient(90deg, rgba(1, 1, 1, 1) 1%, rgba(1, 1, 1, 0) 20%);
+}
+.deskripsi {
+  font-size: 2.5rem;
+  margin-bottom: 1.2rem;
+  text-shadow: 1px;
+  font-weight: 4000;
+  mix-blend-mode: difference;
+}
+.welcome .span2 {
+  font-size: 4rem;
+  color: var(--secondary);
+  text-shadow: 20px 20px 20px 50px rgb(1, 1, 1);
+  padding: 1px;
+}
+.content .cta {
+  font-size: 3rem;
+  border-radius: 4px;
+  padding-left: 1.2rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  padding-right: 2.6rem;
+  border-radius: 5px;
+  color: rgb(236, 196, 135);
+  background: var(--primary);
+}
+
+/*Hero Section end*/
+
+/*    Separator   */
+
+/* About Us Section*/
+.About p {
+  text-align: center;
+  display: inline-block;
+  padding: 0.4rem;
+}
+.About p::after {
+  content: "";
+  display: block;
+  border-bottom: solid 2px var(--secondary);
+  transform: scaleX(0);
+  transition: 0.4s;
+}
+.About p:hover::after {
+  transform: scaleX(0.7);
+}
+.About-h2 {
+  font-size: 2.8rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  padding: 8rem;
+  text-align: center;
+  font-weight: 500;
+}
+.About p {
+  color: rgb(235, 179, 116);
+  font-size: 1.2rem;
+  margin-left: 1px;
+  margin-right: 1rem;
+}
+
+/* caralog start*/
+.main-menu .row {
+  display: flex;
+  justify-content: center;
+  margin-top: 8rem;
+}
+
+.row img {
+  width: 40%;
+  height: auto;
+  margin: 2px auto;
+  border-radius: 2rem;
+}
+.row .menu-card {
+  text-align: center;
+  margin-left: 0;
+  margin-right: 0;
+  object-fit: cover;
+  background-position: center;
+}
+
+/* caralog end   */
+
+/* Kontak start */
+.location-header {
+  padding: 8rem;
+  padding-bottom: 2rem;
+  justify-content: center;
+  position: relative;
+  display: flex;
+  font-size: 5rem;
+}
+
+.location {
+  display: flex;
+  padding: 3rem 7%;
+  flex: 1 1 45%;
+}
+
+.location p {
+  flex: 1 1 45%;
+  margin-left: 2rem;
+}
+.map {
+  border: solid var(--bg) 2px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+/* Ukuran di device yang beragam
+/* Pada Laptop*/
+
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+/*tablet*/
+@media (max-width: 758px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  #hamburger {
+    display: inline-block;
+  }
+
+  .navbar .Navbar {
+    width: 28rem;
+    background-color: rgb(25, 11, 11, 0.943);
+    position: absolute;
+    right: -100%;
+    height: 100vh;
+    top: 100%;
+    transition: 0.7s;
+  }
+
+  .navbar .Navbar a {
+    display: block;
+
+    color: var(--bg);
+    margin-top: 2rem;
+    font-size: 2rem;
+  }
+  .navbar .Navbar a::after {
+    transform-origin: 0 0;
+  }
+  .navbar .Navbar a:hover::after {
+    transform: scaleX(0.35);
+  }
+  .navbar .Navbar.active {
+    right: 0rem;
+    display: block;
+  }
+
+  .navbar .Extra-Navbar a {
+    margin: 0 1.6rem;
+  }
+  .Hero {
+    font-size: 70%;
+    color: currentColor;
+  }
+  .content {
+    margin-left: 3%;
+  }
+  .main-menu .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 8rem;
+  }
+  .location {
+    flex-wrap: wrap;
+  }
+  .location .location-paragraph p {
+    padding-top: 1rem;
+    font-size: 2rem;
+  }
+}
+
+/*HP*/
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+}
